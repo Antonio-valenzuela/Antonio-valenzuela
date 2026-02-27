@@ -3,7 +3,7 @@ name: Update languages list
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 1" # Monday 12:00 UTC (weekly)
+    - cron: "0 12 * * 1"
 
 permissions:
   contents: write
@@ -48,10 +48,6 @@ jobs:
             seen += 1
 
           total_bytes = sum(totals.values()) or 1
-          rows = []
-          for lang, b in totals.most_common():
-            pct = (b / total_bytes) * 100
-            rows.append((lang, b, pct))
 
           md = []
           md.append("## 🧠 Lenguajes detectados (todos mis repos)")
@@ -59,7 +55,9 @@ jobs:
           md.append("")
           md.append("| Lenguaje | Peso (bytes) | % |")
           md.append("|---|---:|---:|")
-          for lang, b, pct in rows:
+
+          for lang, b in totals.most_common():
+            pct = (b / total_bytes) * 100
             md.append(f"| {lang} | {b:,} | {pct:.2f}% |")
 
           block = "\n".join(md)
