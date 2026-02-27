@@ -2,7 +2,7 @@
 
 ## 🧠 Lenguajes detectados (lista completa)
 <!-- LANGUAGES:START -->
-## 📊 Lenguajes detectados (todos mis repos)
+## 🧠 Lenguajes detectados (todos mis repos)
 _Repos analizados: **8** (solo públicos, sin forks)_
 
 | Lenguaje | Peso (bytes) | % |
