@@ -2,8 +2,8 @@ name: Update languages list
 
 on:
   workflow_dispatch:
-schedule:
-  - cron: "0 12 * * 1" # Lunes 12:00 UTC (semanal)
+  schedule:
+    - cron: "0 12 * * 1" # Monday 12:00 UTC (weekly)
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
-          import json, urllib.request, collections, os, re
+          import json, urllib.request, collections, re
 
           user = "Antonio-valenzuela"
           per_page = 100
@@ -33,7 +33,6 @@ jobs:
           seen = 0
 
           for r in repos:
-            # Ignora forks (cámbialo a False si SÍ quieres incluirlos)
             if r.get("fork"):
               continue
 
@@ -41,7 +40,7 @@ jobs:
             if not lang_url:
               continue
 
-            langs = get(lang_url)  # { "HTML": 12345, "CSS": 2345, ... }
+            langs = get(lang_url)
             if not langs:
               continue
 
@@ -54,7 +53,6 @@ jobs:
             pct = (b / total_bytes) * 100
             rows.append((lang, b, pct))
 
-          # arma markdown
           md = []
           md.append("## 🧠 Lenguajes detectados (todos mis repos)")
           md.append(f"_Repos analizados: **{seen}** (solo públicos, sin forks)_")
@@ -66,7 +64,6 @@ jobs:
 
           block = "\n".join(md)
 
-          # Inserta/actualiza bloque entre marcadores
           readme_path = "README.md"
           with open(readme_path, "r", encoding="utf-8") as f:
             content = f.read()
