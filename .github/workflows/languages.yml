@@ -1,0 +1,97 @@
+name: Update languages list
+
+on:
+  workflow_dispatch:
+schedule:
+  - cron: "0 12 * * 1" # Lunes 12:00 UTC (semanal)
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate languages table
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.request, collections, os, re
+
+          user = "Antonio-valenzuela"
+          per_page = 100
+
+          def get(url):
+            req = urllib.request.Request(url, headers={"User-Agent": "gh-readme"})
+            return json.loads(urllib.request.urlopen(req).read().decode("utf-8"))
+
+          repos = get(f"https://api.github.com/users/{user}/repos?per_page={per_page}")
+
+          totals = collections.Counter()
+          seen = 0
+
+          for r in repos:
+            # Ignora forks (cámbialo a False si SÍ quieres incluirlos)
+            if r.get("fork"):
+              continue
+
+            lang_url = r.get("languages_url")
+            if not lang_url:
+              continue
+
+            langs = get(lang_url)  # { "HTML": 12345, "CSS": 2345, ... }
+            if not langs:
+              continue
+
+            totals.update(langs)
+            seen += 1
+
+          total_bytes = sum(totals.values()) or 1
+          rows = []
+          for lang, b in totals.most_common():
+            pct = (b / total_bytes) * 100
+            rows.append((lang, b, pct))
+
+          # arma markdown
+          md = []
+          md.append("## 🧠 Lenguajes detectados (todos mis repos)")
+          md.append(f"_Repos analizados: **{seen}** (solo públicos, sin forks)_")
+          md.append("")
+          md.append("| Lenguaje | Peso (bytes) | % |")
+          md.append("|---|---:|---:|")
+          for lang, b, pct in rows:
+            md.append(f"| {lang} | {b:,} | {pct:.2f}% |")
+
+          block = "\n".join(md)
+
+          # Inserta/actualiza bloque entre marcadores
+          readme_path = "README.md"
+          with open(readme_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+          start = "<!-- LANGUAGES:START -->"
+          end = "<!-- LANGUAGES:END -->"
+          pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
+
+          replacement = start + "\n" + block + "\n" + end
+
+          if pattern.search(content):
+            content = pattern.sub(replacement, content)
+          else:
+            content += "\n\n" + replacement + "\n"
+
+          with open(readme_path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+          print("README updated.")
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update languages list" || exit 0
+          git push
