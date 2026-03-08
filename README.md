@@ -26,7 +26,7 @@ Actualmente trabajo en proyectos académicos y personales enfocados en:
 - HTML
 - CSS
 - JavaScript
-- Tailwind
+- Python
 
 ### Bases de Datos
 - MySQL
@@ -37,14 +37,6 @@ Actualmente trabajo en proyectos académicos y personales enfocados en:
 - GitHub
 - Docker
 - VS Code
-
----
-
-# 📊 Estadísticas de GitHub
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Antonio-valenzuela&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Antonio-valenzuela&layout=compact&theme=tokyonight)
 
 ---
 
