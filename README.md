@@ -1,113 +1,53 @@
-# 👋 Hola, soy Yahir Valenzuela
+<h1 align="center">Hi 👋, I'm Yahir Valenzuela</h1>
+<h3 align="center">Systems Engineering Student | Backend Developer</h3>
 
-🎓 Estudiante de **Ingeniería en Sistemas Computacionales**  
-💻 Interesado en **Backend Development, Bases de Datos y Arquitectura de Software**  
-📍 México  
-
-Actualmente trabajo en proyectos académicos y personales enfocados en:
-
-- Desarrollo **Full Stack**
-- **.NET / C#**
-- **Bases de datos SQL**
-- **Arquitectura de sistemas**
-- Aplicaciones web modernas
+<p align="center">
+Focused on backend development, databases and software architecture.
+</p>
 
 ---
 
-# 🚀 Tecnologías y herramientas
+### ⚙️ Tech Stack
 
-### Backend
-- C#
-- .NET
-- Node.js
-- TypeScript
-
-### Frontend
-- HTML
-- CSS
-- JavaScript
-- Python
-
-### Bases de Datos
-- MySQL
-- PostgreSQL
-
-### Herramientas
-- Git
-- GitHub
-- Docker
-- VS Code
+<p>
+<img src="https://img.shields.io/badge/C%23-purple?style=flat&logo=csharp"/>
+<img src="https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript"/>
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git"/>
+</p>
 
 ---
 
-# 🧠 Lenguajes detectados en mis repositorios
+### 📊 GitHub Stats
 
-_Repos analizados: **9** (solo públicos, sin forks)_
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=Antonio-valenzuela&show_icons=true&theme=tokyonight"/>
+</p>
 
-| Lenguaje | Peso (bytes) | % |
-|---|---:|---:|
-| HTML | 274,029 | 27.09% |
-| C# | 248,724 | 24.59% |
-| TypeScript | 172,861 | 17.09% |
-| CSS | 172,100 | 17.01% |
-| JavaScript | 127,227 | 12.58% |
-| Java | 16,590 | 1.64% |
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Antonio-valenzuela&layout=compact&theme=tokyonight"/>
+</p>
 
 ---
 
-# 📌 Proyectos destacados
+### 🚀 Featured Projects
 
-🔹 **Sistema de Seguimiento de Proyectos / Tesis**  
-Aplicación para subir, revisar y evaluar proyectos académicos.
+**Sistema de Seguimiento de Proyectos**  
+.NET • C# • MySQL  
 
-Tecnologías:
-- C#
-- .NET
-- MySQL
+**Eco-Education**  
+PHP • JavaScript • MySQL  
 
----
-
-🔹 **Eco-Education**  
-Plataforma educativa con minijuegos sobre sostenibilidad.
-
-Tecnologías:
-- PHP
-- MySQL
-- JavaScript
+**Jurídico Radar**  
+Next.js • Prisma • PostgreSQL • Redis  
 
 ---
 
-🔹 **Juridico Radar**  
-Sistema de monitoreo de información jurídica.
+### 📫 Contact
 
-Tecnologías:
-- Next.js
-- Prisma
-- PostgreSQL
-- Redis
-
----
-
-# 📫 Contacto
-
-💼 GitHub: https://github.com/Antonio-valenzuela  
-📧 Email: (ValenzuelaYahir13@gmail.com)
-
----
-
-⭐ Siempre estoy aprendiendo nuevas tecnologías y mejorando mis proyectos.
-
-
-<!-- LANGUAGES:START -->
-## 🧠 Lenguajes detectados (todos mis repos)
-_Repos analizados: **9** (solo públicos, sin forks)_
-
-| Lenguaje | Peso (bytes) | % |
-|---|---:|---:|
-| HTML | 274,029 | 27.09% |
-| C# | 248,724 | 24.59% |
-| TypeScript | 172,861 | 17.09% |
-| CSS | 172,100 | 17.01% |
-| JavaScript | 127,227 | 12.58% |
-| Java | 16,590 | 1.64% |
-<!-- LANGUAGES:END -->
+GitHub: https://github.com/Antonio-valenzuela  
+Email: ValenzuelaYahir13@gmail.com
