@@ -258,3 +258,19 @@ If you're building something interesting or need a motivated developer to join y
 *⭐ Siempre aprendiendo, siempre construyendo.*
 
 </div>
+
+
+<!-- LANGUAGES:START -->
+## 🧠 Lenguajes detectados (todos mis repos)
+_Repos analizados: **10** (solo públicos, sin forks)_
+
+| Lenguaje | Peso (bytes) | % |
+|---|---:|---:|
+| HTML | 275,336 | 27.11% |
+| C# | 248,724 | 24.49% |
+| CSS | 174,035 | 17.14% |
+| TypeScript | 172,861 | 17.02% |
+| JavaScript | 127,800 | 12.59% |
+| Java | 16,590 | 1.63% |
+| Dockerfile | 106 | 0.01% |
+<!-- LANGUAGES:END -->
