@@ -266,11 +266,11 @@ _Repos analizados: **10** (solo públicos, sin forks)_
 
 | Lenguaje | Peso (bytes) | % |
 |---|---:|---:|
-| HTML | 275,336 | 27.11% |
-| C# | 248,724 | 24.49% |
-| CSS | 174,035 | 17.14% |
-| TypeScript | 172,861 | 17.02% |
-| JavaScript | 127,800 | 12.59% |
-| Java | 16,590 | 1.63% |
+| HTML | 298,564 | 28.26% |
+| C# | 248,724 | 23.54% |
+| CSS | 187,576 | 17.75% |
+| TypeScript | 172,861 | 16.36% |
+| JavaScript | 132,079 | 12.50% |
+| Java | 16,590 | 1.57% |
 | Dockerfile | 106 | 0.01% |
 <!-- LANGUAGES:END -->
