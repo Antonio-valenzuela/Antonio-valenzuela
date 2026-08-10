@@ -262,20 +262,20 @@ If you're building something interesting or need a motivated developer to join y
 
 <!-- LANGUAGES:START -->
 ## 🧠 Lenguajes detectados (todos mis repos)
-_Repos analizados: **12** (solo públicos, sin forks)_
+_Repos analizados: **13** (solo públicos, sin forks)_
 
 | Lenguaje | Peso (bytes) | % |
 |---|---:|---:|
-| TypeScript | 2,118,966 | 43.06% |
-| Kotlin | 1,392,314 | 28.29% |
-| JavaScript | 583,836 | 11.86% |
-| HTML | 318,036 | 6.46% |
-| C# | 248,724 | 5.05% |
-| CSS | 217,086 | 4.41% |
-| PowerShell | 19,255 | 0.39% |
-| Java | 16,590 | 0.34% |
-| Python | 3,112 | 0.06% |
-| Dockerfile | 2,695 | 0.05% |
+| TypeScript | 2,266,316 | 35.57% |
+| JavaScript | 1,742,105 | 27.34% |
+| Kotlin | 1,392,314 | 21.85% |
+| HTML | 325,999 | 5.12% |
+| CSS | 300,369 | 4.71% |
+| C# | 248,724 | 3.90% |
+| Python | 57,335 | 0.90% |
+| PowerShell | 19,255 | 0.30% |
+| Java | 16,590 | 0.26% |
+| Dockerfile | 2,695 | 0.04% |
 | Batchfile | 384 | 0.01% |
 | Shell | 194 | 0.00% |
 <!-- LANGUAGES:END -->
