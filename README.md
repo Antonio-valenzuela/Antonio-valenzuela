@@ -266,16 +266,15 @@ _Repos analizados: **13** (solo públicos, sin forks)_
 
 | Lenguaje | Peso (bytes) | % |
 |---|---:|---:|
-| TypeScript | 2,266,316 | 35.57% |
-| JavaScript | 1,742,105 | 27.34% |
-| Kotlin | 1,392,314 | 21.85% |
-| HTML | 325,999 | 5.12% |
-| CSS | 300,369 | 4.71% |
-| C# | 248,724 | 3.90% |
-| Python | 57,335 | 0.90% |
-| PowerShell | 19,255 | 0.30% |
-| Java | 16,590 | 0.26% |
+| TypeScript | 2,756,303 | 40.01% |
+| JavaScript | 1,755,712 | 25.48% |
+| Kotlin | 1,392,314 | 20.21% |
+| HTML | 325,999 | 4.73% |
+| CSS | 314,635 | 4.57% |
+| C# | 248,724 | 3.61% |
+| Python | 57,335 | 0.83% |
+| PowerShell | 19,255 | 0.28% |
+| Java | 16,590 | 0.24% |
 | Dockerfile | 2,695 | 0.04% |
-| Batchfile | 384 | 0.01% |
 | Shell | 194 | 0.00% |
 <!-- LANGUAGES:END -->
